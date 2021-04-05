@@ -1,0 +1,37 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Shubh gym
+  link(rel='stylesheet' href='../static/script.css')
+body.body
+ nav.mainnav
+  ul.navlist
+    li#home
+      | &quot;
+      button#btn(type='button')
+        a(href='main.html' style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 25px;text-decoration: none;color:lightcoral;")  HOME 
+    li#contactus
+      button#btn(type='button')
+        a(href='contactus.html' style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 25px;text-decoration: none;color:lightcoral;")  CONTACT US 
+    li#aboutus
+      button#btn(type='button')
+        a(href='aboutus.html' style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 25px;text-decoration: none;color:lightcoral;")  ABOUT US 
+form(action = "/main.html" method="post" class = "form")
+  h1 REGISTRATION FORM
+  .registrationform
+    p
+      .formelement  Name
+      input#name(type='text' required='' name='name' placeholder='shubh gupta')
+    p
+      .formelement  Address
+      input#address(type='text' required='' name='Address')
+    p
+      .formelement Email
+      input#email(type='email' required='' name='email' placeholder='shubhg@gmail.com')
+    p
+      .formelement  Phone number
+      input#phonenumber(type='tel' name='phone' pattern='[0-9]{10}' placeholder='do not place zearo or 91 before number')
+    button(class ="submitbtn" class = "submit" style='background-color: lightcoral;width: 1000px; ;height: 30px;font-size: 15px;')
+        | SUBMIT
